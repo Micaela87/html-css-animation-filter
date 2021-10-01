@@ -48,3 +48,12 @@
     width: 40px;
     height: 40px;
 }
+
+/* esercizio 6 */
+.ex-6-img {
+    transition: all 1s linear; 
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1)
+}
