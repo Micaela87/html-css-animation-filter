@@ -140,6 +140,57 @@
 
 @keyframes slide-right {
     100% {
-        right: calc(100% - 60px)
+        right: calc(100% - 60px);
+    }
+}
+
+/* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: slide-round-left;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: slide-round-right;
+    animation-duration: 1s;
+    /* animation-timing-function: linear; */
+}
+
+@keyframes slide-round-left {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    45% {
+        left: calc(100% - 30px);
+        top: 50px;
+    }
+
+    75% {
+        left: -10px;
+        top: 50px;
+    }
+
+    90% {
+        left: -10px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+@keyframes slide-round-right {
+    100% {
+        right: 20%;
     }
 }
