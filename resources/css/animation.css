@@ -57,3 +57,12 @@
 .ex-6-img:hover {
     filter: grayscale(1)
 }
+
+/* esercizio 7 */
+.ex-7-img {
+    transition: all 1s linear; 
+}
+
+.ex-7-img:hover {
+    filter: sepia(0.7)
+}
