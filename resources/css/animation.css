@@ -147,14 +147,14 @@
 /* esercizio 13 */
 .ex-13-button:hover .ex-13-top-white {
     animation-name: slide-round-left;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
     animation-name: slide-round-right;
-    animation-duration: 1s;
-    /* animation-timing-function: linear; */
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 @keyframes slide-round-left {
@@ -190,7 +190,33 @@
 }
 
 @keyframes slide-round-right {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    30% {
+        right: calc(100% - 40px);
+        bottom: -10px;
+    }
+
+    45% {
+        right: calc(100% - 40px);
+        bottom: 50px;
+    }
+
+    75% {
+        right: -10px;
+        bottom: 50px;
+    }
+
+    90% {
+        right: -10px;
+        bottom: -10px;
+    }
+
     100% {
         right: 20%;
+        bottom: -10px;
     }
 }
