@@ -91,15 +91,28 @@
 
 /* esercizio 10 */
 .ex-10-icon {
-    animation-name: rotate;
+    animation-name: rotate-reverse;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
     animation-timing-function: linear;
 }
 
-@keyframes rotate {
+@keyframes rotate-reverse {
     100% {
         transform: rotate(360deg)
     }
+}
+
+/* esercizio 11 */
+.ex-11-icon:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotate {
+   90% {
+       transform: rotate(270deg)
+   } 
 }
