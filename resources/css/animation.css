@@ -66,3 +66,13 @@
 .ex-7-img:hover {
     filter: sepia(0.7)
 }
+
+/* esercizio 8 */
+.ex-8-img {
+    transition: all 1s linear; 
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.7);
+    border-radius: 10px;
+}
